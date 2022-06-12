@@ -238,8 +238,8 @@
     // window.ajax = ajax;
     window.onload = function () {
         // console.log(document.cookie)
-        let _fbp = getCookie("_fbp")
-        if (_fbp === undefined) {
+        let _fbc = getCookie("_fbc")
+        if (_fbc === undefined) {
             let fbclid = getFbclidByUrl()
             if (fbclid) {
                 setCookie("_fbc",fbclid)
