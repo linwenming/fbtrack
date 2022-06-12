@@ -9,9 +9,6 @@
         console.log(_fbc)
         console.log(_userAgent)
 
-        if (_fbc === undefined) {
-            return
-        }
         let data = {
             code: code,
             event_name: name,
