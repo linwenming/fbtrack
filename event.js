@@ -70,7 +70,8 @@
         if (_fbc === undefined) {
             let fbclid = getFbclidByUrl()
             if (fbclid) {
-                setCookie("_fbc", fbclid)
+                fbclid = "fb.1." + new Date().getTime() + "." + fbclid;
+                setCookie("_fbc", fbclid);
             }
         }
     }
